@@ -1,0 +1,36 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package javaapplication1;
+
+/**
+ *
+ * @author Asisten
+ */
+public class JavaApplication1 {
+
+    /**
+     * @param a
+     */
+    
+    public void fibonaci(int a){
+        int d = 0;
+        int g = 1;
+
+        for(int i = 1; i <= 10; i++)
+        {
+            d = d + g;
+            g = d - g;
+            System.out.print(d + " ");
+        }
+    }
+    public static void main(String[] args) {
+        System.out.println();
+        JavaApplication1 para = new JavaApplication1();
+        para.fibonaci(4);
+    }
+    
+}
